@@ -1,6 +1,6 @@
 #include<iostream> 
 #include<math.h> 
-#include <algorithm>
+#include<algorithm>
 
 using namespace std; 
 int x = 0;
@@ -11,7 +11,7 @@ void showMenu()
     cout<<"---------------------------------------------------\n";  
     cout<<"------------------------------------------------\n"; 
     cout<<"1: Addition\t\t"<<endl; 
-    cout<<"2: Subtraction\t"<<"\t\t14: Log with base 10"<<endl; 
+    cout<<"2: Subtraction\t\t"<<endl; 
     cout<<"3: Multiplication\t\t"<<endl; 
     cout<<"4: Division\t\t"<<endl; 
     cout<<"5: Power\t\t"<<endl; 
