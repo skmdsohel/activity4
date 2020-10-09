@@ -15,7 +15,7 @@ void showMenu()
     cout<<"3: Multiplication\t\t"<<endl; 
     cout<<"4: Division\t\t"<<endl; 
     cout<<"5: Power\t\t"<<endl; 
-    cout<<"6: Square root\t\t"<<endl;
+    cout<<"6: Square root\t"<<endl;
 }
 
 float getNum1()
