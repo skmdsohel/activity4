@@ -3,13 +3,19 @@
 # Add steps that publish test results, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/c-cpp/gcc
 
-trigger:
-- master
+CC=g++
+CFLAGS=-c -wall
 
-pool:
-  vmImage: 'ubuntu-latest'
+all: calculator
 
-steps:
-- script: |
-    make
-  displayName: 'make'
+calculator: main.o function.o
+	$(CC) main.o function.o -o calculator
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
+
+function.o: function.cpp
+	$(CC) $(CFLAGS) function.cpp
+
+clean:
+	rm -rf *o hello
